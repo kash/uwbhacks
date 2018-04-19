@@ -59,6 +59,9 @@ body {
         .center {
             flex-direction: column !important;
         }
+        img {
+            max-width: 100%;
+        }
     }
 }
 
@@ -363,19 +366,26 @@ body {
 
 .calendar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    > div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        overflow: hidden;
 
-    @for $i from 1 through 5 {
-        > div:nth-of-type(#{$i}) {
-            background-color: rgba(white, (10 - $i) / 20);
+        @for $i from 1 through 10 {
+            > div:nth-of-type(#{$i}) {
+                background-color: rgba(white, (10 - $i) / 20);
+            }
         }
-    }
 
-    @media(max-width: 730px) {
-        flex-direction: column;
-        > div {
-            width: 100%;
-            margin-bottom: 15px;
+        @media(max-width: 730px) {
+            flex-direction: column;
+            > div {
+                width: 100%;
+                margin-bottom: 15px;
+            }
         }
     }
 }

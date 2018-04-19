@@ -45,7 +45,9 @@ body {
     margin-bottom: 50px;
     width: 100% !important; }
   .what-is-uwbhacks .center {
-    flex-direction: column !important; } }
+    flex-direction: column !important; }
+  .what-is-uwbhacks img {
+    max-width: 100%; } }
 .top-fold__center {
   display: flex;
   align-items: center;
@@ -283,23 +285,39 @@ body {
 
 .calendar {
   display: flex;
-  flex-direction: row; }
-  .calendar > div:nth-of-type(1) {
-    background-color: rgba(255, 255, 255, 0.45); }
-  .calendar > div:nth-of-type(2) {
-    background-color: rgba(255, 255, 255, 0.4); }
-  .calendar > div:nth-of-type(3) {
-    background-color: rgba(255, 255, 255, 0.35); }
-  .calendar > div:nth-of-type(4) {
-    background-color: rgba(255, 255, 255, 0.3); }
-  .calendar > div:nth-of-type(5) {
-    background-color: rgba(255, 255, 255, 0.25); }
-  @media (max-width: 730px) {
-    .calendar {
-      flex-direction: column; }
+  flex-direction: column; }
+  .calendar > div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden; }
+    .calendar > div > div:nth-of-type(1) {
+      background-color: rgba(255, 255, 255, 0.45); }
+    .calendar > div > div:nth-of-type(2) {
+      background-color: rgba(255, 255, 255, 0.4); }
+    .calendar > div > div:nth-of-type(3) {
+      background-color: rgba(255, 255, 255, 0.35); }
+    .calendar > div > div:nth-of-type(4) {
+      background-color: rgba(255, 255, 255, 0.3); }
+    .calendar > div > div:nth-of-type(5) {
+      background-color: rgba(255, 255, 255, 0.25); }
+    .calendar > div > div:nth-of-type(6) {
+      background-color: rgba(255, 255, 255, 0.2); }
+    .calendar > div > div:nth-of-type(7) {
+      background-color: rgba(255, 255, 255, 0.15); }
+    .calendar > div > div:nth-of-type(8) {
+      background-color: rgba(255, 255, 255, 0.1); }
+    .calendar > div > div:nth-of-type(9) {
+      background-color: rgba(255, 255, 255, 0.05); }
+    .calendar > div > div:nth-of-type(10) {
+      background-color: rgba(255, 255, 255, 0); }
+    @media (max-width: 730px) {
       .calendar > div {
-        width: 100%;
-        margin-bottom: 15px; } }
+        flex-direction: column; }
+        .calendar > div > div {
+          width: 100%;
+          margin-bottom: 15px; } }
 
 .calendar__day {
   width: 20%;
