@@ -56,6 +56,37 @@ body {
   flex-direction: row;
   justify-content: space-between; }
 
+.sponsors {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #0f1d2b; }
+  .sponsors .center {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .sponsors .sponsor-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .sponsors .sponsor-container > a:nth-of-type(2) {
+      margin-left: 50px;
+      margin-right: 50px; }
+  .sponsors h2 {
+    opacity: 0.6;
+    color: white;
+    font-family: Cabin, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 25px; }
+  .sponsors img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    opacity: 0.6;
+    max-height: 60px;
+    max-width: 75px; }
+
 .what-is-uwbhacks {
   display: flex;
   justify-content: center;
