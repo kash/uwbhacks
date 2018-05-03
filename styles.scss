@@ -47,11 +47,26 @@ body {
 
 .top-fold__bottom {
     position: relative;
+    display: flex;
+    flex-direction: row;
     top: 80px;
+    > * {
+        padding: 0 15px;
+    }
+    > *:not(:last-of-type){
+        border-right: 1px solid white;
+    }
     a {
+        display: flex;
+        align-items: center;
         opacity: 0.7;
         text-decoration: underline;
         color: white;
+    }
+    
+    img{
+        width: 20px;
+        margin-right: 10px;
     }
 }
 
