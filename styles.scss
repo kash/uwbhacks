@@ -86,6 +86,17 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
+
+        > span {
+            font-size: 0.9rem;
+            margin-top: 30px;
+            opacity: 0.4;
+            color: white;
+            b {
+                color: white;
+                font-weight: 600;
+            }
+        }
     }
     .sponsor-container {
         display: flex;

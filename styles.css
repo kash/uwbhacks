@@ -67,6 +67,14 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column; }
+    .sponsors .center > span {
+      font-size: 0.9rem;
+      margin-top: 30px;
+      opacity: 0.4;
+      color: white; }
+      .sponsors .center > span b {
+        color: white;
+        font-weight: 600; }
   .sponsors .sponsor-container {
     display: flex;
     flex-direction: row;
